@@ -1,0 +1,336 @@
+@font-face {
+    font-family: 'Netflix Sans';
+    font-weight: 100;
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')
+}
+:root
+{
+    --mainFont: 'Netflix Sans';
+    --priamryCol: rgb(229, 9, 20);
+    --secCol: rgb(255,255,255);
+}
+
+header
+{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 300px;
+    position: relative;
+    
+}
+header::before
+{
+  content: ''; 
+   height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-image: url("/images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(30%);
+}
+.nav
+{
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1000px;
+
+}
+.nav svg
+{
+    width: 13%;
+    fill: var(--priamryCol);
+}
+.SignIN
+{
+    width: 5%;
+    height: 26%;
+    background-color:var(--priamryCol);
+    color: var(--secCol);
+    font-family: var(--mainFont);
+    font-size: 50px;
+    border-radius: 10px;
+    border:none
+}
+.button
+{
+    width: 30%;
+    height: 40%;
+}
+.container
+{
+    display: flex;
+    flex-direction: column;
+    color: var(--secCol);
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    line-height: 200px;
+    overflow: auto;
+}
+.heading
+{
+    font-size: 70px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 900;
+}
+.second
+{
+    font-size: 35px;
+    font-family: var(--mainFont);
+}
+.form
+{
+    font-size: 35px;
+    font-family: var(--mainFont);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+  
+}
+.input
+{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 19px;
+}
+.input button
+{   
+    width: 15vw;
+    height: 8vh;
+    background-color: var(--priamryCol);
+    color: var(--secCol);
+    font-size: 60px;
+    font-weight: bolder;
+    font-family: var(--mainFont);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+#Email
+{
+    width: 30vw;
+    height: 7vh;
+    font-family: var(--mainFont);
+    font-size: 80px;
+    color: var(--secCol);
+    border: 1px solid white;
+    border-radius: 12px;
+    outline: none;
+    background: transparent;
+
+}
+.line-break
+{
+    height: 30px;
+    width: 100%;
+    background-color: rgb(65, 64, 64);
+}
+.article-1
+{
+    height: 60vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    color: var(--secCol);
+    padding-left: 500px;
+    padding-right: 300px;
+    font-family: var(--mainFont);
+}
+.Image2
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#Tv
+{
+    width: 100%;
+}
+.Image2 img
+{   width: 100%;
+   object-fit: contain;
+}
+#article
+{
+    padding-left: 3px ;
+}
+.Kid
+{
+    width: 70%;
+}
+.kid
+{
+    width: 50%;
+}
+.kid img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+.Watch
+{
+    width: 30%;
+}
+.Image2 video
+{
+   position: relative;
+   top: -20px;
+   left: -825px;
+   width: 1200px;
+}
+.EnjoyH
+{   width: 75%;
+    font-size: 180px;
+    font-weight: 900;
+    line-break: 350px;
+    margin-bottom: 100px;
+}
+.para{
+    font-size: 70px;
+}
+.article-2
+{
+    height: 60vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    color: var(--secCol);
+    padding-left: 300px;
+    padding-right: 300px;
+    font-family: var(--mainFont);
+}
+.mobile
+{
+    width: 60%;
+}
+.mobile img
+{
+    width: 100%;
+    object-fit: cover;
+}
+*
+{
+    margin: 0;
+}
+.faq
+{
+    height: 120vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    color: var(--secCol);
+    font-family: var(--mainFont);
+    align-items: center;
+    padding-top: 300px;
+}
+.faq-heading
+{
+    font-size: 150px;
+    font-weight: bolder;
+}
+.faqs
+{
+    width: 70%;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.questions
+{
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(68, 68, 68);
+    margin: 30px;
+    font-family: var(--mainFont);
+    font-size: 80px;
+    padding-left:80px;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+
+}
+a
+{
+    color: var(--secCol);
+    font-family: var(--mainFont);
+    font-weight: 900;
+    text-decoration: none;
+}
+footer 
+{
+    background-color: black;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secCol);
+    text-decoration: underline;
+    text-decoration-color: var(--secCol);
+    font-family: var(--mainFont);
+    font-size: 45px;
+    gap: 350px;
+    cursor: pointer;
+}
+.list
+{
+    list-style-type: none;
+    line-height: 100px;
+}
+
+.signIn
+{
+    background-color: black;
+    width: 40%;
+    height: 100%;
+}
+
+/* .form h1
+{
+    line-height: 100px;
+    font-size: 50px;
+} */
+@media screen and (min-width = 200px)
+{  
+  .nav
+  { 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }  
+}
+@media screen and (min-width <= 1000px)
+{  
+  .nav
+  { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }  
+}
